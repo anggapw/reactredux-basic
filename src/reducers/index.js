@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
 
-import { pemainReducer } from './pemainReducer'
+import { barangReducer } from './barangReducer'
 import { keuanganReducer } from './keuanganReducer'
 
 export const rootReducer = combineReducers ({
-    pemain: pemainReducer,
+    barang: barangReducer,
     keuangan: keuanganReducer
 })

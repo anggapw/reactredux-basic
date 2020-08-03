@@ -2,12 +2,14 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 
+import './About.css'
+
 const About = (props) => {
-    const pemain = props.pemain
+    const barang = props.barang
     return (
-        <div>
+        <div className="about">
             <h2>About Page</h2>
-                <span>Jumlah Pemain: </span><span><strong>{pemain}</strong></span><br/>
+                <span>Banyaknya barang: </span><span><strong>{barang}</strong></span><br/>
                 <Link to = "/">Back to Home</Link>
         </div>
     )
@@ -15,7 +17,7 @@ const About = (props) => {
 
 const mapStateToProps = (state) => {
     return {
-        pemain: state.pemain.pemainInti
+        barang: state.barang.jumlahBarang
     }
 }
 
